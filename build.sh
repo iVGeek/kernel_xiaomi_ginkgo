@@ -5,7 +5,7 @@
 
 SECONDS=0 # builtin bash timer
 ZIPNAME="QuicksilveRV2-ginkgo-$(date '+%Y%m%d-%H%M').zip"
-TC_DIR="$HOME/tc/aosp-clang"
+TC_DIR="$HOME/tc/aosp-clang-15"
 GCC_64_DIR="$HOME/tc/aarch64-linux-android-4.9"
 GCC_32_DIR="$HOME/tc/arm-linux-androideabi-4.9"
 AK3_DIR="$HOME/android/AnyKernel3"
@@ -18,7 +18,7 @@ export KBUILD_BUILD_HOST=ci
 
 if ! [ -d "${TC_DIR}" ]; then
 echo "Clang not found! Cloning to ${TC_DIR}..."
-if ! git clone --depth=1 https://gitlab.com/yaosp/prebuilts_clang_host_linux-x86_clang-r450784b ${TC_DIR}; then
+if ! git clone --depth=1 https://gitlab.com/yaosp/prebuilts_clang_host_linux-x86_clang-r468909 ${TC_DIR}; then
 echo "Cloning failed! Aborting..."
 exit 1
 fi
