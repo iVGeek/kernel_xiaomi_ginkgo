@@ -18,8 +18,8 @@ fi
 
 export PATH="$TC_DIR/bin:$PATH"
 
-export KBUILD_BUILD_USER=pixelos
-export KBUILD_BUILD_HOST=ci
+export KBUILD_BUILD_USER=Nakano
+export KBUILD_BUILD_HOST=Asep
 
 if ! [ -d "${TC_DIR}" ]; then
 echo "Clang not found! Cloning to ${TC_DIR}..."
